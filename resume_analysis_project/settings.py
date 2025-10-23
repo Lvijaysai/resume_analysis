@@ -19,6 +19,8 @@ from pathlib import Path
 import os
 from dotenv import load_dotenv
 
+load_dotenv()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Security
@@ -146,6 +148,5 @@ LOGGING = {
 }
 
 # === Transformers Cache Cleanup Path ===
-from pathlib import Path
-import os
+
 os.environ["TRANSFORMERS_CACHE"] = str(Path(__file__).resolve().parent.parent / "hf_cache")
