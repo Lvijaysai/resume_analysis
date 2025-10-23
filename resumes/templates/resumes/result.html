@@ -1,0 +1,14 @@
+/*resume_analysist/resumes/templates/resumes/result.html
+{% extends 'resumes/base.html' %}
+{% block content %}
+  <h2>Analysis Result</h2>
+  <p><strong>Predicted Role:</strong> {{ resume.analysis.predicted_role }}</p>
+  <h3>Summary</h3>
+  <p>{{ resume.analysis.summary }}</p>
+  <h3>Role Probabilities</h3>/*resume_analysis_project/resumes/templates/resumes/result.html
+  <ul>
+    {% for key, value in resume.analysis.scores.items %}
+      <li>{{ key }}: {{ value|floatformat:2 }}</li>
+    {% endfor %}
+  </ul>
+{% endblock %}

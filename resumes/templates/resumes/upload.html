@@ -1,0 +1,10 @@
+/*resume_analysis/resumes/templates/resumes/upload.html
+{% extends 'resumes/base.html' %}
+{% block content %}
+  <h2>Upload Your Resume</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Analyze</button>
+  </form>
+{% endblock %}
