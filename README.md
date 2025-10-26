@@ -7,7 +7,6 @@ A secure Django web app that analyzes resumes using NLP models from Hugging Face
 - Secure file uploads (.pdf, .docx, .txt)
 - Hugging Face summarization + zero-shot classification
 - Local cache for offline inference
-- Django best practices (CSRF, HSTS, HTTPS ready)
 - Clean UI and responsive design
 
 ## 🛠️ Setup
