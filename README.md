@@ -18,3 +18,11 @@ venv\Scripts\activate   # on Windows
 pip install -r requirements.txt
 python manage.py runserver
 
+## 🧠 Models Used
+
+| Task | Model | License |
+|------|--------|----------|
+| **Summarization** | [`sshleifer/distilbart-cnn-12-6`](https://huggingface.co/sshleifer/distilbart-cnn-12-6) | Apache 2.0 |
+| **Zero-shot Classification** | [`MoritzLaurer/deberta-v3-small-zeroshot-v1`](https://huggingface.co/MoritzLaurer/deberta-v3-small-zeroshot-v1) | MIT |
+
+> Models used under open-source licenses for educational and portfolio purposes.
