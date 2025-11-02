@@ -3,8 +3,11 @@
 
 A secure Django web app that analyzes resumes using NLP models from Hugging Face — built with local model caching and production-grade security.
 
+The app supports PDF, DOCX, DOC, and TXT files up to 5MB, extracts text, generates a concise summary, and ranks roles such as Software Engineer, Data Scientist, or AI Engineer based on content analysis.
+
 ## 🚀 Features
-- Secure file uploads (.pdf, .docx, .txt)
+- Secure file uploads
+- Text extraction using PyPDF2 and python-docx libraries
 - Hugging Face summarization + zero-shot classification
 - Local cache for offline inference
 - Clean UI and responsive design
@@ -26,3 +29,19 @@ python manage.py runserver
 | **Zero-shot Classification** | [`MoritzLaurer/deberta-v3-small-zeroshot-v1`](https://huggingface.co/MoritzLaurer/deberta-v3-small-zeroshot-v1) | MIT |
 
 > Models used under open-source licenses for educational and portfolio purposes.
+
+
+output:
+
+Predicted Role: Software Engineer
+
+Summary:
+Experienced developer with strong knowledge in backend APIs, database design, and deploying scalable systems.
+
+Role Probabilities:
+Software Engineer: 0.71
+Backend Developer: 0.18
+AI Engineer: 0.06
+Frontend Developer: 0.03
+Data Scientist: 0.02
+
